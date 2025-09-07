@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerGuide</title>
+
+    <link rel="stylesheet" href="style/output.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .transition-smooth {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 300ms;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="sticky top-0 z-50 bg-card/95 bg-white box border-spacing-x-0.5 shadow-[0px_0.3px_4px_green]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-2 group">
+                    <!-- GraduationCap SVG -->
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent">
+                        AspireWay
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="/"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white ">
+                        Home
+                    </a>
+                    <a href="/career-paths"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white">
+                        Career Paths
+                    </a>
+                    <a href="/skills"
+                        class="px-3 py-2 rounded-md text-sm font-medium   transition-smooth hover:bg-green-800 hover:text-white">
+                        Skills
+                    </a>
+                    <a href="/education"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white">
+                        Education Guide
+                    </a>
+                    <a href="/courses"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Courses
+                    </a>
+                    <a href="/counseling"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="/about"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="/contact"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex">
+                    <button
+                        class="bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md ">
+                        <!-- Menu SVG (will change to X when open) -->
+                        <svg id="menu-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <!-- Mobile Navigation (hidden by default) -->
+
+            <div id="mobile-menu" class="lg:hidden border-t border-border hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Home
+                    </a>
+                    <a href="/career-paths"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Career Paths
+                    </a>
+                    <a href="/skills"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Skills
+                    </a>
+                    <a href="/education"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Education Guide
+                    </a>
+                    <a href="/courses"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Courses
+                    </a>
+                    <a href="/counseling"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="/about"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="/contact"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Contact
+                    </a>
+                    <div class="pt-2">
+                        <button
+                            class="w-full bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="relative  overflow-hidden bg-gradient-to-r from-black to-green-600 text-white h-auto p-25">
+            <div class="  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight ">Discover Your <br>
+                        <span class="text-green-500">Dream Career</span>
+                    </h1>
+                    <p class=" font-bold">Navigate your professional journey with confidence. Explore career paths,
+                        develop essential skills,
+                        and get expert guidance to achieve your goals.</p>
+                    <div class=" mt-15 flex gap-6">
+                        <a href="#" class="bg-white text-green-600 p-3.5 rounded-2xl hover:">Explore Careers </a>
+                        <a href="" class="p-3.5 rounded-2xl hover:bg-green-600 *:text-black">Get Counseling</a>
+                    </div>
+                </div>
+                <div class="w-auto rounded-full ">
+                    <img src="assets/students-img.jpg" alt="" class="rounded-md">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col justify-center items-center m-20">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-green-600 m-4">Why Choose
+                CareerGuide?</h1>
+            <p class="">We provide comprehensive career guidance and resources to help you make informed decisions about
+                your professional future.</p>
+
+        </div>
+    </section>
+
+    <main>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-7 m-10 md:mx-30">
+            <div
+                class=" shadow h-auto hover:shadow-[0px_0.1px_4px_green] justify-center items-center px-12 py-9 flex flex-col gap-5 rounded-sm">
+                <div class="bg-gray-50 w-fit p-1.5 rounded-2xl">
+                    <img src="assets/aim.png" alt="" class="w-9">
+                </div>
+                <div class="flex flex-col gap-5 justify-center items-center">
+                    <h3 class="text-xl font-bold text-green-600">Career Exploration</h3>
+                    <p class="text-green-900">Discover various career paths across different industries and find your
+                        perfect match.</p>
+                </div>
+
+            </div>
+            <div
+                class=" shadow h-auto hover:shadow-[0px_0.1px_4px_green] justify-center items-center px-12 py-9 flex flex-col gap-5 rounded-sm">
+                <div class="bg-gray-50 w-fit p-1.5 rounded-2xl">
+                    <img src="assets/book.png" alt="" class="w-9">
+                </div>
+                <div class="flex flex-col gap-5 justify-center items-center">
+                    <h3 class="text-xl font-bold text-green-600">Skill Development</h3>
+                    <p class="text-green-900">Learn about essential skills and create personalized roadmaps for your
+                        career growth.</p>
+                </div>
+
+            </div>
+            <div
+                class=" shadow h-auto hover:shadow-[0px_0.1px_4px_green] justify-center items-center px-12 py-9 flex flex-col gap-5 rounded-sm">
+                <div class="bg-gray-50 w-fit p-1.5 rounded-2xl">
+                    <img src="assets/person.png" alt="" class="w-9">
+                </div>
+                <div class="flex flex-col gap-5 justify-center items-center">
+                    <h3 class="text-xl font-bold text-green-600">Expert Guidance</h3>
+                    <p class="text-green-900">Get professional counseling and mentorship from experienced career
+                        advisors.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+    </main>
+
+    <section>
+        <div
+            class=" bg-gradient-to-r from-black to-green-600 text-white  grid grid-cols-2 md:grid-cols-4 py-15 px-15 lg:px-30 gap-8">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-3xl">10,000+</h1>
+                <p class="text-sm">Students Guided</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-3xl">500+</h1>
+                <p class="text-sm">Career Paths</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-3xl">50+</h1>
+                <p class="text-sm">Industry Partners</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-3xl">95%</h1>
+                <p class="text-sm">Success Rate</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="flex flex-col justify-center items-center m-20">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-green-600 m-4">Start Your Journey
+            </h1>
+            <p class="">Choose your path and begin exploring your future today</p>
+
+        </div>
+    </section>
+
+    <main>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-7 m-10 md:mx-30">
+            <div
+                class=" shadow h-auto hover:shadow-[0px_0.1px_4px_green]  items-center px-12 py-9 flex flex-col gap-5 rounded-sm">
+                <div class="flex gap-4  items-center">
+                    <div class="bg-gray-50 w-fit p-1.5 rounded-2xl">
+                        <img src="assets/aim.png" alt="" class="w-9">
+
+                    </div>
+                    <h3 class="text-xl font-bold text-green-600">Explore Careers
+                    </h3>
+                </div>
+                <div class="">
+                    <p class="text-green-900 text-sm">Browse different industries and job roles</p>
+                </div>
+
+            </div>
+            <div
+                class=" shadow h-auto hover:shadow-[0px_0.1px_4px_green]  items-center px-12 py-9 flex flex-col gap-5 rounded-sm">
+                <div class="flex gap-4  items-center">
+                    <div class="bg-gray-50 w-fit p-1.5 rounded-2xl">
+                        <img src="assets/aim.png" alt="" class="w-9">
+
+                    </div>
+                    <h3 class="text-xl font-bold text-green-600">Build Skills
+
+                    </h3>
+                </div>
+                <div class="">
+                    <p class="text-green-900 text-sm">Create your personalized learning roadmap</p>
+                </div>
+
+            </div>
+            <div
+                class=" shadow h-auto hover:shadow-[0px_0.1px_4px_green]  items-center px-12 py-9 flex flex-col gap-5 rounded-sm">
+                <div class="flex  items-center">
+                    <div class="bg-gray-50 w-fit p-1.5 rounded-2xl">
+                        <img src="assets/aim.png" alt="" class="w-9">
+
+                    </div>
+                    <h3 class="text-xl font-bold text-green-600">Find Courses
+
+                    </h3>
+                </div>
+                <div class="">
+                    <p class="text-green-900 text-sm">Discover the best courses and certifications</p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </main>
+
+
+
+
+    <footer class="bg-green-50 h-fit">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 m-20 pt-28">
+            <div>
+                <div class="flex  gap-4">
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent mb-8">
+                        AspireWay
+                    </span>
+
+                </div>
+                <div>
+                    <p class="text-sm">
+                        Empowering students and professionals to make informed career decisions through expert guidance
+                        and
+                        comprehensive resources.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Quick Links</h3>
+                <a href="" class="hover:text-green-600">Career Paths</a>
+                <a href="" class="hover:text-green-600">Skills Roadmap</a>
+                <a href="" class="hover:text-green-600">Education Guide</a>
+                <a href="" class="hover:text-green-600">Courses</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Services</h3>
+                <a href="" class="hover:text-green-600">Career Counseling</a>
+                <a href="" class="hover:text-green-600">Resume Review</a>
+                <a href="" class="hover:text-green-600">Interview Prep</a>
+                <a href="" class="hover:text-green-600">Skill Assessment</a>
+            </div>
+            <div>
+                <div class="flex flex-col gap-5">
+                    <h3 class="mb-2 font-bold">Contact Us</h3>
+                    <div>
+                    <p>info@careerguide.com</p>
+                    <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="">
+                    <a href="" class="py-3 px-13 xl:px-20 rounded-md bg-gradient-to-r from-black to-green-600 text-white ">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between text-sm py-7 px-15">
+            <p>© 2024 CareerGuide. All rights reserved.</p>
+            <div class="flex gap-5">
+                <a href="" class="hover:text-green-600">Privacy Policy</a>
+                <a href="" class="hover:text-green-600">Terms of Service</a>
+                <a href="" class="hover:text-green-600">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            // Create X icon (initially hidden)
+            const xIcon = document.createElement('div');
+            xIcon.innerHTML = `<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+            xIcon.style.display = 'none';
+            
+            // Add both icons to the button
+            mobileMenuButton.appendChild(xIcon);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.style.display = 'none';
+                    xIcon.style.display = 'block';
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                });
+            });
+        });
+    </script> -->
+</body>
+
+</html>
