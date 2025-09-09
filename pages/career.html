@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Career Paths</title>
+    <link rel="stylesheet" href="../style/output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .transition-smooth {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .borderbox {
+            box-shadow: inset;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-background">
+    <nav class="sticky top-0 z-50 bg-card/95 bg-white box border-spacing-x-0.5 shadow-[0px_0.3px_4px_green]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-2 group">
+                    <!-- GraduationCap SVG -->
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent">
+                        AspireWay
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="../index.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white ">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth bg-green-800 text-white">
+                        Career Paths
+                    </a>
+                    <a href="skills.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium   transition-smooth hover:bg-green-800 hover:text-white">
+                        Skills
+                    </a>
+                    <a href="Counseling.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="about.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="contact.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex">
+                    <button
+                        class="bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md ">
+                        <!-- Menu SVG (will change to X when open) -->
+                        <svg id="menu-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <!-- Mobile Navigation (hidden by default) -->
+
+            <div id="mobile-menu" class="lg:hidden border-t border-border hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="../index.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth bg-green-800 text-white">
+                        Career Paths
+                    </a>
+                    <a href="skills.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Skills
+                    </a>
+                    <a href="Counseling.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="about.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="contact.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Contact
+                    </a>
+                    <div class="pt-2">
+                        <button
+                            class="w-full bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="min-h-screen bg-background py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center space-y-4 mb-12">
+                <h1
+                    class="text-4xl sm:text-5xl font-bold bg-green-700 bg-clip-text text-transparent">
+                    Explore Career Paths
+                </h1>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Discover exciting career opportunities across various industries. Each field offers unique
+                    challenges, growth potential, and pathways to success.
+                </p>
+            </div>
+
+            <!-- Career Fields Grid -->
+            <div class="space-y-12">
+                <!-- Information Technology -->
+                <div class="space-y-6">
+                    <!-- Field Header -->
+                    <div class="flex items-center space-x-4 p-6 rounded-xl bg-green-50 border">
+                        <div class="p-3 rounded-xl bg-green-100">
+                            <div><img src="../assets/code.png" alt="" class="h-6 w-6"></div>
+                        </div>
+                        <div>   
+                            <h2 class="text-2xl font-bold text-foreground">Information Technology</h2>
+                            <p class="text-muted-foreground">Build the digital future with cutting-edge technology
+                                solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Jobs Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Web Developer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">Web
+                                        Developer</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹3.2 to ₹7.2 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Data Scientist -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">Data
+                                        Scientist</h3>
+                                    <span
+                                        class="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded">Very
+                                        High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹11.6 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- AI Engineer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">AI
+                                        Engineer</h3>
+                                    <span
+                                        class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Excellent</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹10 to ₹15 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cybersecurity Specialist -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Cybersecurity Specialist</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2.9 to 8 L (entry-mid)</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cloud Architect -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">Cloud
+                                        Architect</h3>
+                                    <span
+                                        class="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded">Very
+                                        High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹10 to ₹30 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="space-y-6">
+                    <!-- Field Header -->
+                    <div class="flex items-center space-x-4 p-6 rounded-xl bg-green-50 border shadow-card">
+                       <div class="p-3 rounded-xl bg-green-100">
+                            <div><img src="../assets/heart.png" alt="" class="h-6 w-6"></div>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-foreground">Healthcare</h2>
+                            <p class="text-muted-foreground">Make a difference in people's lives through medical care
+                                and wellness</p>
+                        </div>
+                    </div>
+
+                    <!-- Jobs Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Registered Nurse -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Registered Nurse</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7.3 High LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Medical Doctor -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Medical Doctor</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Stable</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7 to ₹48 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Physical Therapist -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:green-700 transition-smooth">
+                                        Physical Therapist</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹5 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Healthcare Administrator -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Healthcare Administrator</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹4 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Pharmacist -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Pharmacist</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹1.2 to ₹7 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- design -->
+                <div class="space-y-6">
+                    
+                    <div class="flex items-center space-x-4 p-6 rounded-xl bg-green-50 border shadow-card">
+                        <div class="p-3 rounded-xl bg-green-100">
+                            <div><img src="../assets/design.png" alt="" class="h-6 w-6"></div>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-foreground">Design & Creative</h2>
+                            <p class="text-muted-foreground">Express creativity and bring ideas to life through visual storytelling</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        UX/UI Designer</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7.3 High LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                       <!-- Graphic Designer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Graphic Designer</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7 to ₹48 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Creative Director -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:green-700 transition-smooth">
+                                        Creative Director</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderatean</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹5 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Motion Graphics Artist -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Motion Graphics Artist</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">high</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹4 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Brand Strategist -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Brand Strategist</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹1.2 to ₹7 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Business & Finance -->
+                <div class="space-y-6">
+                    <!-- Field Header -->
+                    <div class="flex items-center space-x-4 p-6 rounded-xl bg-green-50 border shadow-card">
+                        <div class="p-3 rounded-xl bg-green-100">
+                            <div><img src="../assets/graph.png" alt="" class="h-6 w-6"></div>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-foreground">Business & Finance</h2>
+                            <p class="text-muted-foreground">Drive growth and manage financial operations for organizations</p>
+                        </div>
+                    </div>
+
+                    <!-- Jobs Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Marketing Manager -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Marketing Manager</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7.3 High LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Financial Analyst -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Financial Analyst</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7 to ₹48 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- HR Manager -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:green-700 transition-smooth">
+                                        HR Manager</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹5 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Business Consultant -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Business Consultant</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹4 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Investment Banker -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Investment Banker
+</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹1.2 to ₹7 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engineering -->
+                <div class="space-y-6">
+                    <!-- Field Header -->
+                    <div class="flex items-center space-x-4 p-6 rounded-xl bg-green-50 border shadow-card">
+                       <div class="p-3 rounded-xl bg-green-100">
+                            <div><img src="../assets/tools.png" alt="" class="h-6 w-6"></div>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-foreground">Engineering</h2>
+                            <p class="text-muted-foreground">Design and build solutions that shape our physical world</p>
+                        </div>
+                    </div>
+
+                    <!-- Jobs Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Software Engineer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                       Software Engineer</h3>
+                                    <span
+                                        class="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded">Very High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7.3 High LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Mechanical Engineer -->
+
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Mechanical Engineer</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹7 to ₹48 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Civil Engineer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:green-700 transition-smooth">
+                                        Civil Engineer</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹5 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Electrical Engineer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Electrical Engineer</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded">Moderate</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹2 to ₹4 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Environmental Engineer -->
+                        <div
+                            class="border-0 rounded-lg shadow transition-smooth hover:shadow-[0px_0.1px_2px_green] group cursor-pointer bg-white">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold group-hover:text-green-700 transition-smooth">
+                                        Environmental Engineer</h3>
+                                    <span
+                                        class="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded">High</span>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="text-sm text-gray-500">Average Salary</div>
+                                    <div class="text-lg font-semibold text-foreground">₹1.2 to ₹7 LPA</div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    Learn More
+                                    <span class="ml-2" id="arrow-right-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional fields would follow the same pattern -->
+                <!-- Design & Creative, Business & Finance, Engineering, Education -->
+
+            </div>
+            
+
+            <!-- CTA Section -->
+            <div class="mt-16 text-center space-y-6 p-8 bg-gradient-to-r from-black to-green-600 rounded-2xl">
+                <h3 class="text-2xl font-bold text-white">
+                    Ready to Start Your Career Journey?
+                </h3>
+                <p class="text-white/90 max-w-2xl mx-auto">
+                    Get personalized guidance and create a roadmap tailored to your interests and goals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-black hover:bg-green-800 hover:text-white px-6 py-3 rounded-md font-medium">
+                        Take Career Assessment
+                    </button>
+                    <button class="border border-white text-white hover:bg-white/10 px-6 py-3 rounded-md font-medium">
+                        Schedule Counseling
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-green-50 h-fit">
+        <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-20 pt-28">
+            <div>
+                <div class="flex  gap-4">
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent mb-8">
+                        AspireWay
+                    </span>
+
+                </div>
+                <div>
+                    <p class="text-sm">
+                        Empowering students and professionals to make informed career decisions through expert guidance
+                        and
+                        comprehensive resources.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Quick Links</h3>
+                <a href="" class="hover:text-green-600">Career Paths</a>
+                <a href="" class="hover:text-green-600">Skills Roadmap</a>
+                <a href="" class="hover:text-green-600">Education Guide</a>
+                <a href="" class="hover:text-green-600">Courses</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Services</h3>
+                <a href="" class="hover:text-green-600">Career Counseling</a>
+                <a href="" class="hover:text-green-600">Resume Review</a>
+                <a href="" class="hover:text-green-600">Interview Prep</a>
+                <a href="" class="hover:text-green-600">Skill Assessment</a>
+            </div>
+            <div>
+                <div class="flex flex-col gap-5">
+                    <h3 class="mb-2 font-bold">Contact Us</h3>
+                    <div>
+                    <p>jai34563@gmail.com</p>
+                    <p>+91 6385467340</p>
+                    </div>
+                    <div class="">
+                    <a href="" class="py-3 px-13 xl:px-20 rounded-md bg-gradient-to-r from-black to-green-600 text-white ">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between text-sm py-7 px-15">
+            <p>© 2025 CareerGuide. All rights reserved.</p>
+            <div class="flex gap-5">
+                <a href="" class="hover:text-green-600">Privacy Policy</a>
+                <a href="" class="hover:text-green-600">Terms of Service</a>
+                <a href="" class="hover:text-green-600">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            // Create X icon (initially hidden)
+            const xIcon = document.createElement('div');
+            xIcon.innerHTML = `<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+            xIcon.style.display = 'none';
+            
+            // Add both icons to the button
+            mobileMenuButton.appendChild(xIcon);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.style.display = 'none';
+                    xIcon.style.display = 'block';
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                });
+            });
+        });
+   
+        // Initialize Lucide icons
+        lucide.createIcons({
+            icons: {
+                Code,
+                Heart,
+                Palette,
+                TrendingUp,
+                Wrench,
+                BookOpen,
+                Users,
+                Briefcase,
+                ArrowRight
+            }
+        });
+
+        // Add specific icons to elements
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add code icon
+            lucide.createIcon(document.getElementById('code-icon'), 'Code', { width: 32, height: 32 });
+
+            // Add heart icon
+            lucide.createIcon(document.getElementById('heart-icon'), 'Heart', { width: 32, height: 32 });
+
+            // Add arrow-right icons
+            const arrowIcons = document.querySelectorAll('#arrow-right-sm');
+            arrowIcons.forEach(icon => {
+                lucide.createIcon(icon, 'ArrowRight', { width: 16, height: 16 });
+            });
+        });
+    </script>
+</body>
+
+</html>

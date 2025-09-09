@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Roadmap</title>
+    <link rel="stylesheet" href="../style/output.css">
+    <style>
+        .progress-bar {
+            height: 0.5rem;
+            border-radius: 9999px;
+            background-color: #e5e7eb;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 9999px;
+            background: linear-gradient(to right, #3b82f6, #6366f1);
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen  ">
+        <nav class="sticky top-0 z-50 bg-card/95 bg-white box border-spacing-x-0.5 shadow-[0px_0.3px_4px_green]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-2 group">
+                    <!-- GraduationCap SVG -->
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent">
+                        AspireWay
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="../index.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white ">
+                        Home
+                    </a>
+                    <a href="career.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white">
+                        Career Paths
+                    </a>
+                    <a href="#"
+                        class="px-3 py-2 rounded-md text-sm font-medium   transition-smooth bg-green-800 text-white">
+                        Skills
+                    </a>
+                    <a href="Counseling.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="about.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="contact.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex">
+                    <button
+                        class="bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md ">
+                        <!-- Menu SVG (will change to X when open) -->
+                        <svg id="menu-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <!-- Mobile Navigation (hidden by default) -->
+
+            <div id="mobile-menu" class="lg:hidden border-t border-border hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="../index.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Home
+                    </a>
+                    <a href="career.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Career Paths
+                    </a>
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth bg-green-800 text-white">
+                        Skills
+                    </a>
+                    <a href="Counseling.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="about.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="contact.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Contact
+                    </a>
+                    <div class="pt-2">
+                        <button
+                            class="w-full bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="min-h-screen bg-background py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center space-y-4 mb-12">
+                <h1 class="text-4xl sm:text-5xl font-bold text-green-700 ">
+                    Skills Roadmap
+                </h1>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Master the essential skills for your chosen career path. Follow our structured roadmaps
+                    to build expertise step by step.
+                </p>
+            </div>
+
+            <!-- Skill Roadmaps -->
+            <div class="space-y-12">
+                <!-- Web Developer Roadmap -->
+                <div class="space-y-6">
+                    <!-- Roadmap Header -->
+                    <div class="flex flex-col md:flex-row items-center justify-between p-6 rounded-xl shadow">
+                        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                            <div class="p-3 rounded-xl bg-primary/10">
+                                <div class="text-primary">
+                                    <i data-lucide="code" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-foreground">Web Developer</h2>
+                                <div class="flex items-center space-x-2 text-muted-foreground">
+                                    <i data-lucide="clock" class="h-4 w-4"></i>
+                                    <span>Estimated time: 6-12 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="py-2 px-4 bg-gradient-to-r from-black to-green-600 text-white rounded-md 0 flex items-center">
+                            Start Learning
+                            <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 invert">
+                        </button>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- HTML & CSS -->
+                        <div
+                            class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">HTML & CSS</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Foundation of web development</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">JavaScript</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Programming language for interactivity</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- React -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">React</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Popular frontend framework</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Node.js -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Node.js</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Backend JavaScript runtime</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">60%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tailwind CSS -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Tailwind CSS</h3>
+                                    <span
+                                        class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">recommended</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Utility-first CSS framework</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">50%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Git/GitHub -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Git/GitHub</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Version control system</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Scientist Roadmap -->
+                <div class="space-y-6">
+                    <!-- Roadmap Header -->
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between p-6 rounded-xl bg-gradient-card shadow">
+                        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                            <div class="p-3 rounded-xl bg-secondary/10">
+                                <div class="text-secondary">
+                                    <i data-lucide="database" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-foreground">Data Scientist</h2>
+                                <div class="flex items-center space-x-2 text-muted-foreground">
+                                    <i data-lucide="clock" class="h-4 w-4"></i>
+                                    <span>Estimated time: 8-15 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="py-2 px-4 bg-gradient-to-r from-black to-green-600 text-white rounded-md flex items-center">
+                            Start Learning
+                            <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 invert">
+                        </button>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Python -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Python</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Primary programming language</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">95%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Statistics -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Statistics</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Mathematical foundation</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Machine Learning -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Machine Learning</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Core AI/ML concepts</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- SQL -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">SQL</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Database query language</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">80%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Pandas & NumPy -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Pandas & NumPy</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Data manipulation libraries</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Visualization -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Visualization</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Data presentation skills</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">65%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UX/UI Designer Roadmap -->
+                <div class="space-y-6">
+                    <!-- Roadmap Header -->
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between p-6 rounded-xl bg-gradient-card shadow">
+                        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                            <div class="p-3 rounded-xl bg-accent/10">
+                                <div class="text-accent">
+                                    <i data-lucide="palette" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-foreground">UX/UI Designer</h2>
+                                <div class="flex items-center space-x-2 text-muted-foreground">
+                                    <i data-lucide="clock" class="h-4 w-4"></i>
+                                    <span>Estimated time: 4-8 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="py-2 px-4 bg-gradient-to-r from-black to-green-600 text-white rounded-md flex items-center">
+                            Start Learning
+                            <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 invert">
+                        </button>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Design Principles -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Design Principles</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Visual design fundamentals</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Figma/Sketch -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Figma/Sketch</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Design software tools</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- User Research -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">User Research</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Understanding user needs</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Prototyping -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Prototyping</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Interactive design mockups</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- HTML/CSS -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">HTML/CSS</h3>
+                                    <span
+                                        class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">recommended</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Basic frontend knowledge</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">60%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Design Systems -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Design Systems</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Consistent design patterns</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">65%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Marketer Roadmap -->
+                <div class="space-y-6">
+                    <!-- Roadmap Header -->
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between p-6 rounded-xl bg-gradient-card shadow">
+                        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                            <div class="p-3 rounded-xl bg-orange-50">
+                                <div class="text-orange-600">
+                                    <i data-lucide="trending-up" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-foreground">Digital Marketer</h2>
+                                <div class="flex items-center space-x-2 text-muted-foreground">
+                                    <i data-lucide="clock" class="h-4 w-4"></i>
+                                    <span>Estimated time: 3-6 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="py-2 px-4 bg-gradient-to-r from-black to-green-600 text-white rounded-md flex items-center">
+                            Start Learning
+                            <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 invert">
+                        </button>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Social Media Marketing -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Social Media Marketing</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Platform-specific strategies</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">80%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- SEO/SEM -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">SEO/SEM</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Search engine optimization</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Content Creation -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Content Creation</h3>
+                                    <span
+                                        class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">essential</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Engaging content development</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Analytics -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Analytics</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Data-driven decision making</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Email Marketing -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Email Marketing</h3>
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">important</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">Direct communication strategies</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">65%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Paid Advertising -->
+                        <div class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                            <div class="p-6 pb-3">
+                                <div class="flex items-start justify-between">
+                                    <h3 class="text-lg font-semibold">Paid Advertising</h3>
+                                    <span
+                                        class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">recommended</span>
+                                </div>
+                                <p class="text-muted-foreground mt-2">PPC and social ads</p>
+                            </div>
+                            <div class="p-6 pt-0 space-y-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="text-muted-foreground">Market Demand</span>
+                                        <span class="font-medium">60%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="bg-green-700 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                    View Resources
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Resources Section -->
+            <div class="mt-16 space-y-8">
+                <div class="text-center space-y-4">
+                    <h2 class="text-3xl font-bold text-foreground">
+                        Recommended Learning Platforms
+                    </h2>
+                    <p class="text-lg text-muted-foreground">
+                        Start your learning journey with these trusted educational resources
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- freeCodeCamp -->
+                    <div
+                        class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold group-hover:text-primary transition-smooth">
+                                    freeCodeCamp</h3>
+                                <span
+                                    class="bg-secondary text-secondary-foreground text-xs font-medium px-2.5 py-0.5 rounded">Free</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground mb-4">Web Development</p>
+                            <button
+                                class="w-full border group border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                Visit Platform
+                                <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 group-hover:invert ">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Coursera -->
+                    <div
+                        class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold group-hover:text-primary transition-smooth">Coursera
+                                </h3>
+                                <span
+                                    class="bg-primary text-primary-foreground text-xs font-medium px-2.5 py-0.5 rounded">Paid</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground mb-4">Data Science & More</p>
+                            <button
+                                class="w-full border group border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                Visit Platform
+                                <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 group-hover:invert ">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Udemy -->
+                    <div
+                        class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold group-hover:text-primary transition-smooth">Udemy</h3>
+                                <span
+                                    class="bg-primary text-primary-foreground text-xs font-medium px-2.5 py-0.5 rounded">Paid</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground mb-4">Various Skills</p>
+                            <button
+                                class="w-full border group border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                Visit Platform
+                                <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 group-hover:invert ">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- YouTube -->
+                    <div
+                        class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold group-hover:text-primary transition-smooth">YouTube
+                                </h3>
+                                <span
+                                    class="bg-secondary text-secondary-foreground text-xs font-medium px-2.5 py-0.5 rounded">Free</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground mb-4">All Topics</p>
+                            <button
+                                class="w-full border group border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                Visit Platform
+                                <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 group-hover:invert ">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Khan Academy -->
+                    <div
+                        class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold group-hover:text-primary transition-smooth">Khan
+                                    Academy</h3>
+                                <span
+                                    class="bg-secondary text-secondary-foreground text-xs font-medium px-2.5 py-0.5 rounded">Free</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground mb-4">Fundamentals</p>
+                            <button
+                                class="w-full border group border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                Visit Platform
+                                <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 group-hover:invert ">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pluralsight -->
+                    <div
+                        class="border-0 rounded-lg shadow-card hover:shadow-[0px_0.1px_2px_green] transition-smooth shadow">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold group-hover:text-primary transition-smooth">Pluralsight
+                                </h3>
+                                <span
+                                    class="bg-primary text-primary-foreground text-xs font-medium px-2.5 py-0.5 rounded">Paid</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground mb-4">Tech Skills</p>
+                            <button
+                                class="w-full border group border-gray-300 rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 hover:text-white transition-smooth flex items-center justify-center">
+                                Visit Platform
+                                <img src="../assets/arrow.png" alt="" class="ml-2 h-4 w-4 group-hover:invert ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Section -->
+            <div class="mt-16 text-center space-y-6 p-8 bg-gradient-to-r from-black to-green-600 text-white  rounded-2xl">
+                <i data-lucide="check-circle" class="h-16 w-16 text-white mx-auto"></i>
+                <h3 class="text-2xl font-bold text-white">
+                    Ready to Build Your Skills?
+                </h3>
+                <p class="text-white/90 max-w-2xl mx-auto">
+                    Create a personalized learning plan based on your career goals and current skill level.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="py-3 px-6 bg-white text-black font-medium rounded-md hover:bg-black hover:text-white">
+                        Create Learning Plan
+                    </button>
+                    <button class="py-3 px-6 border border-white text-white font-medium rounded-md hover:bg-white/10">
+                        Get Skill Assessment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="bg-green-50 h-fit">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-20 pt-28">
+            <div>
+                <div class="flex  gap-4">
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent mb-8">
+                        AspireWay
+                    </span>
+
+                </div>
+                <div>
+                    <p class="text-sm">
+                        Empowering students and professionals to make informed career decisions through expert guidance
+                        and
+                        comprehensive resources.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Quick Links</h3>
+                <a href="" class="hover:text-green-600">Career Paths</a>
+                <a href="" class="hover:text-green-600">Skills Roadmap</a>
+                <a href="" class="hover:text-green-600">Education Guide</a>
+                <a href="" class="hover:text-green-600">Courses</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Services</h3>
+                <a href="" class="hover:text-green-600">Career Counseling</a>
+                <a href="" class="hover:text-green-600">Resume Review</a>
+                <a href="" class="hover:text-green-600">Interview Prep</a>
+                <a href="" class="hover:text-green-600">Skill Assessment</a>
+            </div>
+            <div>
+                <div class="flex flex-col gap-5">
+                    <h3 class="mb-2 font-bold">Contact Us</h3>
+                    <div>
+                    <p>jai34563@gmail.com</p>
+                    <p>+91 6385467340</p>
+                    </div>
+                    <div class="">
+                    <a href="" class="py-3 px-13 xl:px-20 rounded-md bg-gradient-to-r from-black to-green-600 text-white ">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between text-sm py-7 px-15">
+            <p>© 2025 CareerGuide. All rights reserved.</p>
+            <div class="flex gap-5">
+                <a href="" class="hover:text-green-600">Privacy Policy</a>
+                <a href="" class="hover:text-green-600">Terms of Service</a>
+                <a href="" class="hover:text-green-600">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            // Create X icon (initially hidden)
+            const xIcon = document.createElement('div');
+            xIcon.innerHTML = `<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+            xIcon.style.display = 'none';
+            
+            // Add both icons to the button
+            mobileMenuButton.appendChild(xIcon);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.style.display = 'none';
+                    xIcon.style.display = 'block';
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                });
+            });
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

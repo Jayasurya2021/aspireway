@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerGuide - Contact Us</title>
+    <link rel="stylesheet" href="../style/output.css">
+</head>
+
+<body class="min-h-screen bg-gray-50">
+        <nav class="sticky top-0 z-50 bg-card/95 bg-white box border-spacing-x-0.5 shadow-[0px_0.3px_4px_green]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-2 group">
+                    <!-- GraduationCap SVG -->
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent">
+                        AspireWay
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="../index.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white ">
+                        Home
+                    </a>
+                    <a href="career.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium  transition-smooth hover:bg-green-800 hover:text-white">
+                        Career Paths
+                    </a>
+                    <a href="skills.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium   transition-smooth hover:bg-green-800 hover:text-white">
+                        Skills
+                    </a>
+                    <a href="Counseling.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="about.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="#"
+                        class="px-3 py-2 rounded-md text-sm font-medium transition-smooth bg-green-800 text-white">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex">
+                    <button
+                        class="bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md ">
+                        <!-- Menu SVG (will change to X when open) -->
+                        <svg id="menu-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <!-- Mobile Navigation (hidden by default) -->
+
+            <div id="mobile-menu" class="lg:hidden border-t border-border hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="../index.html"
+                        class="block px-3 py-2 rounded-md font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Home
+                    </a>
+                    <a href="career.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Career Paths
+                    </a>
+                    <a href="skills.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Skills
+                    </a>
+                    <a href="Counseling.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        Counseling
+                    </a>
+                    <a href="about.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth hover:bg-green-800 hover:text-white">
+                        About Us
+                    </a>
+                    <a href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium transition-smooth bg-green-800 text-white">
+                        Contact
+                    </a>
+                    <div class="pt-2">
+                        <button
+                            class="w-full bg-gradient-to-r from-black to-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-smooth">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="min-h-screen bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center space-y-4 mb-12">
+                <h1 class="text-4xl sm:text-5xl font-bold text-green-700">
+                    Contact Us
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Have questions about your career? Need guidance on educational choices?
+                    We're here to help you succeed.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <h2 class="text-2xl font-bold text-gray-900">Get in Touch</h2>
+                        <p class="text-gray-600">
+                            Send us a message and we'll respond within 24 hours.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl border-0 shadow-card">
+                        <div class="p-6">
+                            <form id="contactForm" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="space-y-2">
+                                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name
+                                            *</label>
+                                        <input type="text" id="name"
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-100"
+                                            placeholder="Your full name" required />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label for="email" class="block text-sm font-medium text-gray-700">Email
+                                            *</label>
+                                        <input type="email" id="email"
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-100"
+                                            placeholder="your.email@example.com" required />
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone
+                                        Number</label>
+                                    <input type="tel" id="phone"
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-100"
+                                        placeholder="+91 98765 43210" />
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject
+                                        *</label>
+                                    <input type="text" id="subject"
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-100"
+                                        placeholder="What's this regarding?" required />
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label for="inquiry" class="block text-sm font-medium text-gray-700">Type of
+                                        Inquiry</label>
+                                    <select id="inquiry"
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-100 select-dropdown">
+                                        <option value="" selected disabled>Select inquiry type</option>
+                                        <option value="career-counseling">Career Counseling</option>
+                                        <option value="education-guidance">Education Guidance</option>
+                                        <option value="course-recommendation">Course Recommendation</option>
+                                        <option value="skill-assessment">Skill Assessment</option>
+                                        <option value="career-transition">Career Transition</option>
+                                        <option value="general-inquiry">General Inquiry</option>
+                                        <option value="partnership">Partnership/Collaboration</option>
+                                        <option value="feedback">Feedback/Complaint</option>
+                                    </select>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message
+                                        *</label>
+                                    <textarea id="message"
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-100"
+                                        placeholder="Tell us more about how we can help you..." rows="5"
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-gradient-primary text-white py-3 px-4 rounded-md hover:opacity-90 flex items-center justify-center">
+                                    <i data-lucide="send" class="mr-2 w-5 h-5"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information & FAQs -->
+                <div class="space-y-8">
+                    <!-- Contact Info Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                       
+
+                        <!-- Call Us -->
+                        <div class="bg-white rounded-xl border-0 shadow-card">
+                            <div class="p-6">
+                                <div class="flex items-center space-x-3 pb-3">
+                                    <div class="p-2 rounded-lg bg-blue-100 text-blue-600">
+                                        <img src="../assets/call.png" alt="" class="w-6 h-6">
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Call Us</h3>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-sm text-gray-600">+91 98765 43210</p>
+                                    <p class="text-sm text-gray-600">+91 87654 32109</p>
+                                    <p class="text-sm text-gray-600">Toll Free: 1800-123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Us -->
+                        <div class="bg-white rounded-xl border-0 shadow-card">
+                            <div class="p-6">
+                                <div class="flex items-center space-x-3 pb-3">
+                                    <div class="p-2 rounded-lg bg-blue-100 text-blue-600">
+                                        <img src="../assets/mail.png" alt="" class="w-6 h-6">
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Email Us</h3>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-sm text-gray-600">info@careerguide.com</p>
+                                    <p class="text-sm text-gray-600">support@careerguide.com</p>
+                                    <p class="text-sm text-gray-600">careers@careerguide.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="bg-white rounded-xl border-0 shadow-card">
+                            <div class="p-6">
+                                <div class="flex items-center space-x-3 pb-3">
+                                    <div class="p-2 rounded-lg bg-blue-100 text-blue-600">
+                                        <img src="../assets/clock.png" alt="" class="w-6 h-6">
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Business Hours</h3>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-sm text-gray-600">Monday - Friday: 9:00 AM - 7:00 PM</p>
+                                    <p class="text-sm text-gray-600">Saturday: 10:00 AM - 5:00 PM</p>
+                                    <p class="text-sm text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-white rounded-xl border-0 shadow-card">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900">Follow Us</h3>
+                            <p class="text-gray-600 mb-4">
+                                Stay updated with the latest career tips and educational insights
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="p-3 rounded-lg bg-gray-100  hover:invert hover:hue-rotate-180 hover:bg-gray-200 transition-smooth"
+                                    aria-label="Facebook">
+                                    <img src="../assets/facebooc-black.png" alt="" class="w-5 h-5">
+                                </a>
+                                <a href="#"
+                                    class="p-3 rounded-lg bg-gray-100 hover:invert hover:hue-rotate-180 hover:bg-gray-200 transition-smooth"
+                                    aria-label="Twitter">
+                                    <img src="../assets/x.png" alt="" class="w-5 h-5">
+                                </a>
+                                <a href="#"
+                                    class="p-3 rounded-lg bg-gray-100 hover:invert hover:hue-rotate-180 hover:bg-gray-200 transition-smooth"
+                                    aria-label="Instagram">
+                                    <img src="../assets/black-logo-instagram.png" alt="" class="w-5 h-5">
+                                </a>
+                                <a href="#"
+                                    class="p-3 rounded-lg bg-gray-100 hover:invert hover:hue-rotate-180 hover:bg-gray-200 transition-smooth"
+                                    aria-label="LinkedIn">
+                                    <img src="../assets/linkedin.png" alt="" class="w-5 h-5">
+                                </a>
+                                <a href="#"
+                                    class="p-3 rounded-lg bg-gray-100 hover:invert hover:hue-rotate-180 hover:bg-gray-200 transition-smooth"
+                                    aria-label="YouTube">
+                                    <img src="../assets/youtube-black-logo.png" alt="" class="w-5 h-5">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="bg-green-50 h-fit">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-20 pt-28">
+            <div>
+                <div class="flex  gap-4">
+                    <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-black to-green-600 bg-clip-text text-transparent mb-8">
+                        AspireWay
+                    </span>
+
+                </div>
+                <div>
+                    <p class="text-sm">
+                        Empowering students and professionals to make informed career decisions through expert guidance
+                        and
+                        comprehensive resources.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Quick Links</h3>
+                <a href="" class="hover:text-green-600">Career Paths</a>
+                <a href="" class="hover:text-green-600">Skills Roadmap</a>
+                <a href="" class="hover:text-green-600">Education Guide</a>
+                <a href="" class="hover:text-green-600">Courses</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-2 font-bold">Services</h3>
+                <a href="" class="hover:text-green-600">Career Counseling</a>
+                <a href="" class="hover:text-green-600">Resume Review</a>
+                <a href="" class="hover:text-green-600">Interview Prep</a>
+                <a href="" class="hover:text-green-600">Skill Assessment</a>
+            </div>
+            <div>
+                <div class="flex flex-col gap-5">
+                    <h3 class="mb-2 font-bold">Contact Us</h3>
+                    <div>
+                    <p>jai34563@gmail.com</p>
+                    <p>+91 6385467340</p>
+                    </div>
+                    <div class="">
+                    <a href="" class="py-3 px-13 xl:px-20 rounded-md bg-gradient-to-r from-black to-green-600 text-white ">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between text-sm py-7 px-15">
+            <p>© 2025 CareerGuide. All rights reserved.</p>
+            <div class="flex gap-5">
+                <a href="" class="hover:text-green-600">Privacy Policy</a>
+                <a href="" class="hover:text-green-600">Terms of Service</a>
+                <a href="" class="hover:text-green-600">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            // Create X icon (initially hidden)
+            const xIcon = document.createElement('div');
+            xIcon.innerHTML = `<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+            xIcon.style.display = 'none';
+            
+            // Add both icons to the button
+            mobileMenuButton.appendChild(xIcon);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.style.display = 'none';
+                    xIcon.style.display = 'block';
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.style.display = 'block';
+                    xIcon.style.display = 'none';
+                });
+            });
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Form handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                inquiry: document.getElementById('inquiry').value,
+                message: document.getElementById('message').value
+            };
+
+            // Log form data (in a real application, you would send this to a server)
+            console.log('Form submitted:', formData);
+
+            // Show success message (you can implement this)
+            alert('Thank you for your message! We will get back to you soon.');
+
+            // Reset form
+            this.reset();
+        });
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</body>
+
+</html>
