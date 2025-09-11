@@ -9,7 +9,7 @@
 </head>
 
 <body class="min-h-screen bg-background">
-     <nav class="sticky top-0 z-50 bg-card/95 bg-white box border-spacing-x-0.5 shadow-[0px_0.3px_4px_green]">
+    <nav class="sticky top-0 z-50 bg-card/95 bg-white box border-spacing-x-0.5 shadow-[0px_0.3px_4px_green]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -172,8 +172,7 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div
-                        class="border-0 shadow text-center rounded-lg overflow-hidden">
+                    <div class="border-0 shadow text-center rounded-lg overflow-hidden">
                         <div class="p-6">
                             <div class="mx-auto mb-4 p-3 rounded-2xl bg-muted/50 w-fit text-primary">
                                 <img src="../assets/aim.png" alt="" class="w-8 h-8">
@@ -186,8 +185,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="border-0 shadow text-center rounded-lg overflow-hidden">
+                    <div class="border-0 shadow text-center rounded-lg overflow-hidden">
                         <div class="p-6">
                             <div class="mx-auto mb-4 p-3 rounded-2xl bg-muted/50 w-fit text-secondary">
                                 <img src="../assets/bulp.png" alt="" class="w-8 h-8">
@@ -200,8 +198,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="border-0 shadow text-center rounded-lg overflow-hidden">
+                    <div class="border-0 shadow text-center rounded-lg overflow-hidden">
                         <div class="p-6">
                             <div class="mx-auto mb-4 p-3 rounded-2xl bg-muted/50 w-fit text-accent">
                                 <img src="../assets/heart.png" alt="" class="w-8 h-8">
@@ -214,8 +211,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="border-0 shadow  text-center rounded-lg overflow-hidden">
+                    <div class="border-0 shadow  text-center rounded-lg overflow-hidden">
                         <div class="p-6">
                             <div class="mx-auto mb-4 p-3 rounded-2xl bg-muted/50 w-fit text-orange-600">
                                 <img src="../assets/world.png" alt="" class="w-8 h-8">
@@ -231,8 +227,8 @@
             </div>
         </div>
     </div>
-        <footer class="bg-green-50 h-fit">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-20 pt-28">
+    <footer class="bg-green-50 h-fit">
+        <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-10 lg:m-20 pt-28">
             <div>
                 <div class="flex  gap-4">
                     <svg class="h-8 w-8  group-hover:text-accent transition-smooth" viewBox="0 0 24 24" fill="none"
@@ -268,22 +264,24 @@
                 <a href="" class="hover:text-green-600">Interview Prep</a>
                 <a href="" class="hover:text-green-600">Skill Assessment</a>
             </div>
-            <div>
+            <div class=>
                 <div class="flex flex-col gap-5">
                     <h3 class="mb-2 font-bold">Contact Us</h3>
                     <div>
-                    <p>jai34563@gmail.com</p>
-                    <p>+91 6385467340</p>
+                        <p>jai34563@gmail.com</p>
+                        <p>+91 6385467340</p>
                     </div>
                     <div class="">
-                    <a href="" class="py-3 px-13 xl:px-20 rounded-md bg-gradient-to-r from-black to-green-600 text-white ">Get in Touch</a>
+                        <a href=""
+                            class="py-3 px-13 xl:px-20 rounded-md bg-gradient-to-r from-black to-green-600 text-white ">Get
+                            in Touch</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-between text-sm py-7 px-15">
+        <div class="flex flex-col md:justify-between text-sm py-7 px-10">
             <p>© 2025 CareerGuide. All rights reserved.</p>
-            <div class="flex gap-5">
+            <div class="flex flex-col md:flex-row mt-2 gap-5">
                 <a href="" class="hover:text-green-600">Privacy Policy</a>
                 <a href="" class="hover:text-green-600">Terms of Service</a>
                 <a href="" class="hover:text-green-600">Cookie Policy</a>
@@ -301,22 +299,22 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
-            
+
             // Create X icon (initially hidden)
             const xIcon = document.createElement('div');
             xIcon.innerHTML = `<svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
             xIcon.style.display = 'none';
-            
+
             // Add both icons to the button
             mobileMenuButton.appendChild(xIcon);
-            
-            mobileMenuButton.addEventListener('click', function() {
+
+            mobileMenuButton.addEventListener('click', function () {
                 const isOpen = !mobileMenu.classList.contains('hidden');
-                
+
                 if (isOpen) {
                     mobileMenu.classList.add('hidden');
                     menuIcon.style.display = 'block';
@@ -327,11 +325,11 @@
                     xIcon.style.display = 'block';
                 }
             });
-            
+
             // Close menu when clicking on a link
             const mobileLinks = mobileMenu.querySelectorAll('a');
             mobileLinks.forEach(link => {
-                link.addEventListener('click', function() {
+                link.addEventListener('click', function () {
                     mobileMenu.classList.add('hidden');
                     menuIcon.style.display = 'block';
                     xIcon.style.display = 'none';
